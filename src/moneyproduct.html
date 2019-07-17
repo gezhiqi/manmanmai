@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- @@include ./template/base.html -->
+  <link rel="stylesheet" href="./css/moneyproduct.css">
+  <script src="./js/conmon.js"></script>
+  <title>国内折扣</title>
+</head>
+
+<body>
+
+  <!-- 头部 -->
+  <div class="moneyproduct-header">
+    <h1>国内折扣</h1>
+    <div class="appdown">
+      <a href="#"><img src="./img/header_app.png" alt=""></a>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="cu-content">
+      <div class="cu-contentinfo">
+        <!-- 挖个坑 -->
+
+      </div>
+
+      <!-- 列表 -->
+      <div class="list">
+        <div class="area">
+          <ul class="disstorck">
+            <!-- 挖个坑 -->
+            <!-- 见js第19-29行 -->
+          </ul>
+        </div>
+      </div>
+
+      <!-- 前往购买 -->
+      <div class="golink">
+        <a href="#"><i class="icon-gobuy"></i>前往购买</a>
+      </div>
+
+      <div>
+        <img src="./img/mmbweixin2.png" style="width: 100%; height: auto;">
+      </div>
+
+      <!-- 评论区 -->
+      <div class="cu-content-pl">
+        <div class="tit">发表评论</div>
+        <div class="reply">
+          <div class="form">
+            <textarea name="ctl00$ContentBody$txt_nr" id="ctl00_ContentBody_txt_nr" rows="3"></textarea>
+            <div class="ctrl">
+              <input name="ctl00$ContentBody$Button1" value="发表评论" id="ctl00_ContentBody_Button1" class="tjdp" type="submit">
+            </div>
+          </div>
+        </div>
+        <div class="tit" id="newcomment">最新评论</div>
+        <div class="list">
+          <ul>
+            <li class="ui-border-b">
+              <div class="userimg">
+                <img src="http://home.manmanbuy.com/upface/face/1466230634_162.jpg">
+              </div>
+              <div class="con">
+                <div class="name clearfix">
+                  <div class="username">赶鸭子上架</div>
+                  <div class="time">2016/10/25 14:18:45</div>
+                </div>
+                <div class="content" id="content">比超市便宜了几块</div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- 信息渲染 -->
+<script type="text/html" id="infoTpl">
+  <h3 class="title">{{ productInfo1 }}</h3>
+  <div class="info">
+    <span class="mall">{{ productFrom }}</span>
+    <span class="addtime" style="margin-right: 4px;">{{ productTime }}</span>
+    <span class="author">{{ productTips }}</span>
+  </div>
+  <!-- 中心内容 -->
+  <div class="content clearfix">
+    <div class="pic fr">
+      <img src="{{ productImgLg.src }}"
+        alt="{{ productImgLg.alt }}">
+    </div>
+    <div class="conn">
+      <p>{{ productInfo }}</p>
+      <p>{{ productName }}</p>
+      <p class="pimg">
+        <img src="{{ productImgLg.src }}"
+          alt="{{ productImgLg.alt }}">
+      </p>
+    </div>
+  </div>
+</script>
+<script src="./js/moneyproduct.js"></script>
+
+</body>
+</html>

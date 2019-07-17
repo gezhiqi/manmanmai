@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- @@include ./template/base.html -->
+  <link rel="stylesheet" href="./css/couponproduct.css">
+  <script src="./js/conmon.js"></script>
+  <title>优惠券</title>
+</head>
+
+<body>
+
+  <!-- 头部 -->
+  <div class="couponproduct-header">
+    <h1>优惠券</h1>
+    <div class="appdown">
+      <a href="#"><img src="./img/header_app.png" alt=""></a>
+    </div>
+  </div>
+
+  <div style="background-color: #fff;font-size: .4rem; text-align: center; color: rgb(153, 153, 153); line-height: 1.2rem;">--点餐前出示手机中的优惠券，即可享受优惠--</div>
+
+  <!-- 内容 -->
+  <div class="content">
+    <ul>
+      <!-- 挖个坑 -->
+    </ul>
+  </div>
+
+  <!-- 底部 -->
+  <!-- @@include ./template/footer.html -->
+
+  <script type="text/html" id="contentTpl">
+    {{ each result v i }}
+    <li>
+      <a>
+        <div class="pic">
+          <img alt="{{ v.couponProductImg.alt }}" src="{{ v.couponProductImg.src }}">
+        </div>
+        <div class="info">
+          <div class="tit">
+            <h3>C27 两人小食组 新奥尔良烤翅2块+薯条(中)+黄金鸡块5块+劲爆鸡米花(小) 2016年10月凭肯德基优惠券</h3>
+            <h2>{{ v.couponProductPrice }}</h2>
+          </div>
+          <div class="time">{{ v.couponProductTime }}</div>
+        </div>
+      </a>
+    </li>
+    {{ /each }}
+  
+  </script>
+
+  <script src="./js/couponproduct.js"></script>
+
+</body>
+
+</html>

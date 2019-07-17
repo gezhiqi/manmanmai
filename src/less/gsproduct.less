@@ -1,0 +1,132 @@
+// 头部
+.gsproduct-header {
+  height: 1.4rem;
+  background: #ff841d;
+  position: relative;
+
+    h1 {
+      font-size: .7rem;
+      height: 1.4rem;
+      line-height: 1.4rem;
+      text-align: center;
+      font-weight: 700;
+      color: #fff;
+    }
+
+    
+    .appdown {
+      position: absolute;
+      right: 0;
+      top: 0;
+      padding: .2rem;
+      
+      img {
+        height: 1rem;
+      }
+    }
+}
+
+// 标题导航
+.hd {
+  position: relative;
+  .filter {
+    ul {
+      background-color: #fff;
+      border-bottom: .02rem solid #dadada;
+      li {
+        float: left;
+        width: 33.3%;
+        a {
+          display: block;
+          height: 1.44rem;
+          line-height: 1.44rem;
+          text-align: center;
+          color: #000;
+          font-size: .54rem;
+        }
+      }
+    }
+  }
+
+  .shop {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 1.46rem;
+    &.active {
+      display: none;
+    }
+    ul {
+      background-color: #fff;
+      li {
+        width: 100%;
+        border-bottom: .02rem solid #dadada;
+        padding-left: .4rem;
+        a {
+          display: block;
+          height: 1.44rem;
+          line-height: 1.44rem;
+          color: #000;
+          font-size: .54rem;
+        }
+      }
+    }
+  }
+}
+
+
+// 主要商品
+.gsproduct-list {
+  ul {
+    padding: .12rem;
+    padding-bottom: 1.2rem;
+    background-color: #f1f1f1;
+    li {
+      float: left;
+      width: 50%;
+      a {
+        background-color: #fff;
+        display: block;
+        margin: .16rem;
+        .pic {
+          width: 100%;
+          height: auto;
+          text-align: center;
+          overflow: hidden;
+        }
+  
+        .title {
+          color: #333;
+          padding: 0 .24rem;
+          height: .56rem;
+          overflow: hidden;
+          font-size: .42rem;
+          line-height: .56rem;
+          font-weight: 400;
+          text-align: left;
+          margin-top: .24rem;
+        }
+  
+        .other {
+          padding: .2rem 0.24rem;
+          .price {
+            float: left;
+            color: #f8601d;
+            font-size: .56rem;
+          }
+          .btn {
+            float: right;
+            font-size: .42rem;
+            color: #FFF;
+            border-radius:.12rem;
+            background-color: #ff9501;
+            padding: .12rem .4rem;
+            text-decoration: none;
+            display: block;
+          }
+        }
+      }
+
+    }
+  }
+}

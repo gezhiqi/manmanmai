@@ -1,0 +1,114 @@
+.gsproduct-header {
+  height: 1.4rem;
+  background: #ff841d;
+  position: relative;
+}
+.gsproduct-header h1 {
+  font-size: 0.7rem;
+  height: 1.4rem;
+  line-height: 1.4rem;
+  text-align: center;
+  font-weight: 700;
+  color: #fff;
+}
+.gsproduct-header .appdown {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 0.2rem;
+}
+.gsproduct-header .appdown img {
+  height: 1rem;
+}
+.hd {
+  position: relative;
+}
+.hd .filter ul {
+  background-color: #fff;
+  border-bottom: 0.02rem solid #dadada;
+}
+.hd .filter ul li {
+  float: left;
+  width: 33.3%;
+}
+.hd .filter ul li a {
+  display: block;
+  height: 1.44rem;
+  line-height: 1.44rem;
+  text-align: center;
+  color: #000;
+  font-size: 0.54rem;
+}
+.hd .shop {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 1.46rem;
+}
+.hd .shop.active {
+  display: none;
+}
+.hd .shop ul {
+  background-color: #fff;
+}
+.hd .shop ul li {
+  width: 100%;
+  border-bottom: 0.02rem solid #dadada;
+  padding-left: 0.4rem;
+}
+.hd .shop ul li a {
+  display: block;
+  height: 1.44rem;
+  line-height: 1.44rem;
+  color: #000;
+  font-size: 0.54rem;
+}
+.gsproduct-list ul {
+  padding: 0.12rem;
+  padding-bottom: 1.2rem;
+  background-color: #f1f1f1;
+}
+.gsproduct-list ul li {
+  float: left;
+  width: 50%;
+}
+.gsproduct-list ul li a {
+  background-color: #fff;
+  display: block;
+  margin: 0.16rem;
+}
+.gsproduct-list ul li a .pic {
+  width: 100%;
+  height: auto;
+  text-align: center;
+  overflow: hidden;
+}
+.gsproduct-list ul li a .title {
+  color: #333;
+  padding: 0 0.24rem;
+  height: 0.56rem;
+  overflow: hidden;
+  font-size: 0.42rem;
+  line-height: 0.56rem;
+  font-weight: 400;
+  text-align: left;
+  margin-top: 0.24rem;
+}
+.gsproduct-list ul li a .other {
+  padding: 0.2rem 0.24rem;
+}
+.gsproduct-list ul li a .other .price {
+  float: left;
+  color: #f8601d;
+  font-size: 0.56rem;
+}
+.gsproduct-list ul li a .other .btn {
+  float: right;
+  font-size: 0.42rem;
+  color: #FFF;
+  border-radius: 0.12rem;
+  background-color: #ff9501;
+  padding: 0.12rem 0.4rem;
+  text-decoration: none;
+  display: block;
+}

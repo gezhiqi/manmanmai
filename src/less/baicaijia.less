@@ -1,0 +1,190 @@
+// 头部
+.discount-header {
+  height: 1.4rem;
+  background: #f4483e;
+  position: relative;
+  width: 100%;
+
+    h1 {
+      font-size: .7rem;
+      height: 1.4rem;
+      line-height: 1.4rem;
+      text-align: center;
+      font-weight: 700;
+      color: #fff;
+
+    }
+
+  .appdown {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: .2rem;
+    
+    img {
+      height: 1rem;
+    }
+  }
+}
+
+// 滚动条样式
+.coupon-title {
+    height: 1.52rem;
+    border-bottom: .02rem solid #eee;  
+    .bcj-title {
+      height: 100%;
+      overflow: auto;
+      ul {
+        height: 100%;
+        width: 28rem;
+        // width: 2000px;
+        li {
+          height: 100%;
+          float: left;
+          a {
+            height: 100%;
+            line-height: 1.48rem;
+            display: block;
+            margin: 0 .48rem;
+            font-size: .48rem;
+            color: #000;
+          }
+        }
+      }
+    }
+}
+
+// 中心内容样式
+.bcj-list {
+  ul {
+    padding-bottom: 1rem;
+    li {
+      position: relative;
+      margin: .2rem .1rem 0;
+      background-color: #fff;
+      .pic {
+        width: 5.3rem;
+        height: 5.2rem;
+        float: left;
+
+        img {
+          width: 5.2rem;
+          height: 5.2rem;
+          border: none;
+        }
+      }
+
+      .inf {
+        height: 5.2rem;
+        .i {
+          .t {
+            min-height: 1.12rem;
+            max-height: 1.6rem;
+            line-height: 1.5;
+            font-weight: 400;
+            text-align-last: left;
+            -webkit-line-clamp: 2;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            font-size: .48rem
+          }
+
+          .pr {
+            font-size: .64rem;
+            color: #fc353a;
+            margin-top: .08rem;
+            position: relative;
+            width: 100%;
+
+            del {
+              text-decoration: line-through;
+              font-size: .38rem;
+              color: #a8a8a8;
+              margin-left: .24rem;
+              vertical-align: middle;
+            }
+
+          }
+        }
+
+        .o {
+          position: absolute;
+          bottom: .3rem;
+          padding: 0 .2rem 0 5.4rem;
+          box-sizing: border-box;
+          width: 100%;
+
+
+          .bar {
+            position: relative;
+            i {
+              position: relative;
+              z-index: 999;
+              width: 3.28rem;
+              height: .66rem;
+              line-height: .62rem;
+              border: .02rem solid #fc353a;
+              border-radius: .24rem;
+              color: #fff;
+              font-weight: 700;
+              background: #ffb7b7;
+              text-align: center;
+              overflow: hidden;
+              display: block;
+
+              em {
+                position: relative;
+                z-index: 999;
+              }
+              
+              span {
+                position: absolute;
+                left: 0;
+                top: 0;
+                background-color: red;
+                height: 100%;
+                border-radius: .2rem;
+                font-size: .36rem!important; 
+              }
+            }
+            b {
+              position: absolute;
+              left: 3.6rem;
+              top: .11rem;
+              font-size: .36rem;
+              color: #fc353a;
+            }
+          }
+
+          .q {
+            float: left;
+            margin-top: .4rem;
+            a {
+              border: .02rem dotted #e4393c;
+              height: 1rem;
+              line-height: 1rem;
+              color: #e4393c;
+              display: block;
+              font-size: .48rem;
+            }
+          }
+          .g {
+            float: right;
+            margin-top: .4rem;
+            a {
+              padding: 0 .4rem;
+              display: block;
+              height:1rem;
+              line-height: 1rem;
+              background-color: #ff5e5d;
+              color: #fff;
+              border-radius: .16rem;
+              font-size: .48rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}

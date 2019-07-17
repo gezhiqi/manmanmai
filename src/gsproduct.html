@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- @@include ./template/base.html -->
+  <link rel="stylesheet" href="./css/gsproduct.css">
+  <title>凑单品</title>
+</head>
+
+<body>
+  <!-- 头部 -->
+  <div class="gsproduct-header">
+    <h1>凑单品</h1>
+    <div class="appdown">
+      <a href="#"><img src="./img/header_app.png" alt=""></a>
+    </div>
+  </div>
+
+  <!-- 标题导航 -->
+  <div class="hd">
+    <div class="filter">
+      <ul class="clearfix">
+        <li data-id="getgsshop">
+          <a href="javascript:;">京东 </a>
+        </li>
+        <li data-id="getgsshoparea">
+          <a href="javascript:;">华北 </a>
+        </li>
+        <li data-id="getgsshopprice">
+          <a href="javascript:;">全部价格 </a>
+        </li>
+      </ul>
+    </div>
+    <!-- 隐藏的ul -->
+    <div class="shop active">
+      <ul>
+       <!-- 挖个坑 -->
+      </ul>
+    </div>
+  </div>
+
+
+  <!-- 主要商品 -->
+  <div class="gsproduct-list">
+    <ul class="clearfix">
+      <!-- 挖个坑 -->
+    </ul>
+  </div>
+
+  <!-- 底部 -->
+  <!-- @@include ./template/footer.html -->
+
+  <!-- 店铺模板 -->
+  <script type="text/html" id="shopTpl">
+  {{ each result v i }}
+    <li class="shopli" data-id="{{ v.shopId }}">
+      <a href="javascript:;">{{ v.shopName }}</a>
+    </li>
+  {{ /each }}
+</script>
+
+  <!-- 地区模板 -->
+  <script type="text/html" id="areaTpl">
+  {{ each result v i }}
+    <li class="areali" data-id="{{ v.areaId }}">
+      <a href="javascript:;">{{ v.areaName }}</a>
+    </li>
+  {{ /each }}
+</script>
+
+  <!-- 商品列表明细模板 -->
+  <script type="text/html" id="listTpl">
+  {{ each result v i }}
+    <li>
+      <a href="http://item.m.jd.com/ware/view.action?wareId=1274360" class="item border-img">
+        <div class="pic"><img src="{{ v.productImg }}"
+            style="width: 174px; height: 174px;"></div>
+        <div class="title">{{ v.productName }}</div>
+        <div class="other">
+          <div class="price">{{ v.productPrice }}</div>
+          <div class="btn">去凑单</div>
+          <div class="clearfix"></div>
+        </div>
+      </a>
+    </li>
+  {{ /each }}
+</script>
+  <script src="./js/gsproduct.js"></script>
+</body>
+
+</html>

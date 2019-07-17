@@ -1,0 +1,55 @@
+.coupon-header {
+  height: 1.4rem;
+  background: #f4483e;
+  position: relative;
+  width: 100%;
+}
+.coupon-header h1 {
+  font-size: 0.7rem;
+  height: 1.4rem;
+  line-height: 1.4rem;
+  text-align: center;
+  font-weight: 700;
+  color: #fff;
+}
+.coupon-header .appdown {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 0.2rem;
+}
+.coupon-header .appdown img {
+  height: 1rem;
+}
+.coupon-title {
+  background-color: #fff;
+}
+.coupon-title ul {
+  padding-top: 0.4rem;
+  padding-bottom: 1rem;
+}
+.coupon-title ul li {
+  float: left;
+  margin: 0.2rem 0 0 0.2rem;
+  padding: 0.2rem 0 0;
+  border: 0.04rem solid #eee;
+  display: block;
+  height: 3rem;
+  overflow: hidden;
+  text-align: center;
+  width: 4.72rem;
+  font-size: 0.46rem;
+}
+.coupon-title ul li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  color: #000;
+}
+.coupon-title ul li a div {
+  height: 1.2rem;
+  width: 1.2rem;
+}
+.coupon-title ul li a div img {
+  width: 1.2rem;
+}

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- @@include ./template/base.html -->
+  <link rel="stylesheet" href="./css/bijia.css">
+  <script src="./js/conmon.js"></script>
+  <title>商品详情</title>
+</head>
+
+<body>
+
+
+  <!-- 头部 -->
+  <!-- @@include ./template/header.html -->
+
+  <!-- 搜索 -->
+  <!-- @@include ./template/search.html -->
+
+  <!-- 分类 -->
+  <div class="product-bijia-title">
+    <a class="list-title1" href="#">首页</a>
+    >
+    <a class="list-title2" href="category.html">全部分类</a>
+    >
+    <a class="list-title3" class="" href="#">
+      <!-- 挖个坑 -->
+    </a>
+    >
+    <a class="select" href="">筛选</a>
+  </div>
+
+  <!-- 产品详情 -->
+  <div id="product-bijia">
+    <!-- 图片 -->
+    <div class="product-bijia">
+      <!-- 挖个坑 -->
+    </div>
+    <!-- 列表 -->
+    <div class="tab">
+      <ul class="clearfix">
+        <li>
+          <a href="">比价购买</a>
+        </li>
+        <li>
+          <a href="">产品参数</a>
+        </li>
+        <li>
+          <a href="">评价(1234)</a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- 去购买 -->
+    <div class="plist clearfix">
+      <div class="shop fl">
+        <img src="http://sf.manmanbuy.com/images/sitelogo/1.png">
+        京东商城
+      </div>
+      <div class="price fr">
+        <span style="color: #d10311; font-size: .48rem">￥1999.00</span>
+        <span style="display: inline-block; width: 1.6rem; height: .68rem; border-radius: .12rem; text-align: center; line-height: .68rem; background-color: rgb(255, 85, 0); color: rgb(255, 255, 255); font-size: .48rem;">
+          去购买
+        </span>
+      </div>
+
+    </div>
+
+    <p style="padding: .4rem .32rem; text-align: center;font-size: .3rem;">* 实际价格以各网站列出的实时售价为准，我们提供的价格可能有数小时至数日的延迟。</p>
+
+    <!-- 评价 -->
+    <div class="product-com">
+      <div class="product-com-title">
+        <div>网友评价</div>
+      </div>
+      <div class="product-com-list">
+        <ul>
+          <!-- 挖个坑 -->
+        </ul>
+
+        <div class="more">
+          <a href="javascript:;" class="morein">查看更多评价</a>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+  <!-- 底部 -->
+  <!-- @@include ./template/footer.html -->
+
+
+  <!-- 商品图片模板 -->
+  <script type="text/html" id="product-bijiaTpl">
+  <div class="product-name">
+    {{ result.productName }}
+  </div>
+  <div class="product-img">
+    <img style="width: '3.4rem'" src="{{ result.productImg.src }}">
+  </div>
+  <div class="product-collect">
+    <a href="javascript:setfav(473088);">
+      <img src="http://www.zuyushop.com/wap/images/sc.jpg" width="39" height="39">
+    </a>
+  </div>
+</script>
+
+  <!-- 评论模板 -->
+  <script type="text/html" id="product-com-listTpl">
+  {{ each result v i}}
+    <li>
+      <div class="date clearfix">
+        <span class="left fl">{{ v.comName }}</span>
+        <span class="right fr">{{ v/comTime }}</span>
+      </div>
+      <div class="fromby clearfix">
+        <span class="fr">{{ v.comFrom }}</span>
+      </div>
+      <div class="content">
+        {{ v.comContent }}
+      </div>
+    </li>
+  {{ /each }}
+
+</script>
+
+
+  <script src="./js/bijia.js"></script>
+</body>
+
+</html>

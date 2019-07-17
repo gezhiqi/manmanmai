@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- @@include ./template/base.html -->
+  <link rel="stylesheet" href="./css/category.css">
+  <title>比价搜索</title>
+</head>
+
+<body>
+  <!-- 头部 -->
+  <!-- @@include ./template/header.html -->
+
+  <!-- 搜索 -->
+  <!-- @@include ./template/search.html -->
+
+  <!-- 列表页 -->
+  <div id="category">
+    <div class="row">
+      <ul class="category-title">
+        
+      </ul>
+    </div>
+  </div>
+
+  <!-- 底部 -->
+  <!-- @@include ./template/footer.html -->
+
+  <!-- 比价标题 -->
+  <script type="text/html" id="categorytilteTpl">
+    {{ each result v i }}
+    <li class="category-title-li">
+      <a href="javascript:;" data-id="{{ v.titleId }}">{{ v.title }}</a>
+      <ul class="category-content clearfix active">
+          <!-- 挖个坑 -->
+      </ul>
+    </li>
+    {{ /each }}
+  </script>
+
+
+
+  <!-- 比价内容模板 -->
+  <script type="text/html" id="categorycontentTpl">
+    {{ each result v i }}
+        <li>
+          <a href="productlist.html?categoryid={{ v.categoryId }}&pageid=1" data-id="{{ v.categoryId }}">{{ v.category }}</a>
+        </li>
+    {{ /each }}
+  </script>
+  <script src="./js/category.js"></script>
+  
+</body>
+
+</html>

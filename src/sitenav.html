@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- @@include ./template/base.html -->
+  <link rel="stylesheet" href="./css/sitenav.css">
+  <title>商城导航</title>
+</head>
+
+<body>
+  <!-- 头部 -->
+  <div class="discount-header">
+    <h1>商城导航</h1>
+    <div class="appdown">
+      <a href="#"><img src="./img/header_app.png" alt=""></a>
+    </div>
+  </div>
+
+  <!-- 中心内容 -->
+  <div class="site-nav">
+    <div class="link clearfix">
+      <!-- 挖个坑 -->
+    </div>
+  </div>
+
+  <!-- 底部 -->
+  <!-- @@include ./template/footer.html -->
+
+  <script type="text/html" id="linkTpl">
+    {{ each result v i }}
+      <a href="{{ v.navHref }}"
+        target="_blank">
+        <img src="{{ v.navImg }}" alt="">
+        {{ v.navTitle }}
+      </a>
+    {{ /each }}
+  </script>
+
+
+  <script src="./js/sitenav.js"></script>
+
+</body>
+
+</html>

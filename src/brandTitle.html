@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- @@include ./template/base.html -->
+  <link rel="stylesheet" href="./css/brandTitle.css">
+  <title>品牌大全</title>
+</head>
+
+<body>
+
+  <!-- 头部 -->
+  <!-- @@include ./template/header.html -->
+
+  <!-- 搜索 -->
+  <!-- @@include ./template/search.html -->
+
+  <!-- 分类 -->
+  <div class="product-list-title">
+    <a class="list-title1" href="#">首页</a>
+    >
+    <a class="list-title2" href="category.html">全部分类</a>
+    >
+    <!-- <a class="list-title3" class="" href="#">
+    </a>
+    >
+    <a class="select" href="">筛选</a> -->
+  </div>
+
+  <!-- 分类标题 -->
+  <div style="font-size: .48rem; color: rgb(135, 70, 4); height: 1.4rem; line-height: 1.4rem;padding-left: .4rem; line-height: 1.4rem; margin: .4rem .2rem; border: .02rem solid rgb(204, 204, 204); background-color: rgb(238, 238, 238);">热门品牌排行</div>
+
+
+  <!-- 列表页 -->
+  <div id="brandTitle">
+    <div class="row">
+      <ul class="brandTitle-title">
+        <!-- 挖个坑 -->
+      </ul>
+    </div>
+  </div>
+
+
+  <!-- 底部 -->
+  <!-- @@include ./template/footer.html -->
+
+
+  <script type="text/html" id="brandTitleTpl">
+    {{ each result v i }}
+      <li class="category-title-li">
+        <a href="brand.html?brandtitleid={{ v.brandTitleId }}" data-id="{{ v.brandTitleId }}">{{ v.brandTitle }}</a>
+      </li>
+    {{ /each }}
+  </script>
+  <script src="./js/brandTitle.js"></script>
+
+</body>
+
+</html>

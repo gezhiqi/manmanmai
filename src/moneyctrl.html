@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- @@include ./template/base.html -->
+  <link rel="stylesheet" href="./css/moneyctrl.css">
+  <script src="./js/conmon.js"></script>
+  <title>比价搜索</title>
+</head>
+
+<body>
+
+  <!-- 头部 -->
+  <div class="save-header">
+      <h1>省钱控 - 最新优惠</h1>
+    <div class="appdown">
+      <a href="#"><img src="./img/header_app.png" alt=""></a>
+    </div>
+  </div>
+
+  <!-- 商品 -->
+  <div class="product-list-product">
+    <ul>
+      <!-- 挖个坑 -->
+    </ul>
+  </div>
+
+  <!-- 分页 -->
+  <div class="page">
+    <div>
+      <a href="javascript:;" id="pageAdd">上一页</a>
+    </div>
+    <div>
+      <select id="selectPage" name="select" style="background-color: rgb(248, 248, 248);border: .02rem solid #bababa; font-size: .32rem; padding: .26rem .4rem;">
+        <!-- 挖个坑 -->
+
+      </select>
+    </div>
+    <div>
+      <a href="javascript:;" id="pageRemove">下一页</a>
+    </div>
+  </div>
+
+
+
+  <!-- 底部 -->
+  <!-- @@include ./template/footer.html -->
+
+  <!-- 分类渲染 -->
+  <script type="text.html" id="listtitleTpl">
+      {{ result.category }}
+  </script>
+
+  <!-- 商品信息 -->
+  <script type="text/html" id="saveproductTpl">
+    {{ each result v i}}
+    <li>
+      <a href="moneyproduct.html?productId={{ v.productId }}" class="clearfix">
+        <div class="pic fl">
+          <img src="{{ v.productImgLg.src }}" alt="{{ v.productImg2.alt }}">
+        </div>
+        <div class="info">
+          <p class="tit">{{ v.productName }}</p>
+          <p class="other"><span>{{ v.productFrom }} | {{ v.productTime }}</span><span>{{ productComCount }}</span></p>
+        </div>
+      </a>
+    </li>
+    {{ /each }}
+  </script>
+
+  <!-- 分页按钮渲染 -->
+  <!-- 见js第63行 -->
+
+
+
+  <script src="./js/moneyctrl.js"></script>
+
+</body>
+
+</html>

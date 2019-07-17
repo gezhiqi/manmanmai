@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- @@include ./template/base.html -->
+  <link rel="stylesheet" href="./css/brand.css">
+  <script src="./js/conmon.js"></script>
+  <title>品牌列表</title>
+</head>
+
+<body>
+
+  <!-- 头部 -->
+  <!-- @@include ./template/header.html -->
+
+  <!-- 搜索 -->
+  <!-- @@include ./template/search.html -->
+
+  <!-- 分类 -->
+  <div class="brand-list-title">
+    <a class="list-title1" href="#">首页</a>
+    >
+    <a class="list-title2" href="category.html">全部分类</a>
+    >
+    <!-- <a class="list-title3" class="" href="#">
+      </a>
+      >
+      <a class="select" href="">筛选</a> -->
+  </div>
+
+  <!-- 列表标题 -->
+  <div class="brand-title">
+    <h3>哪个牌子好</h3>
+  </div>
+
+  <!-- 列表 -->
+  <div class="brand-list">
+    <ul>
+      <!-- 挖个坑 -->
+    </ul>
+  </div>
+
+  <!-- 底部 -->
+  <!-- @@include ./template/footer.html -->
+
+
+  <script type="text/html" id="brand-listTpl">
+    {{ each result v i }}
+      <li class="clearfix">
+        <a href="./productlist.html?pageid=1&amp;categoryid=0">
+          <div class="top">
+            <span>{{ i }}</span>
+          </div>
+          <div class="inner">
+            <div class="tit">{{ v.brandName }}</div>
+            <p>{{ v.brandInfo }}</p>
+          </div>
+        </a>
+      </li>
+    {{ /each }}
+  </script>
+
+  <script src="./js/brand.js"></script>
+</body>
+
+</html>

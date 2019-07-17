@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- @@include ./template/base.html -->
+  <link rel="stylesheet" href="./css/coupon.css">
+  <title>优惠券</title>
+</head>
+
+<body>
+  <!-- 头部 -->
+  <div class="coupon-header">
+    <h1>优惠券</h1>
+    <div class="appdown">
+      <a href="#">
+        <img src="./img/header_app.png" alt="">
+      </a>
+    </div>
+  </div>
+
+  <!-- 中心内容 -->
+  <div class="coupon-title">
+    <ul class="clearfix">
+      <!-- 挖个坑 -->
+    </ul>
+  </div>
+
+  <!-- 底部 -->
+  <!-- @@include ./template/footer.html -->
+
+
+  <script type="text/html" id="coupon-titleTpl">
+    {{ each result v i }}
+    <li style="width: 118.333px;">
+      <a href="./couponproduct.html?couponid={{ v.couponId }}&amp;name={{ v.couponTitle }}" class="">
+        <div>
+          <img src="{{ v.couponImg }}" alt="">
+        </div>
+        <br>{{ v.couponTitle }}
+      </a>
+    </li>
+    {{ /each }}
+  </script>
+
+  <script src="./js/coupon.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,158 @@
+body {
+  background-color: #f1f1f1;
+  height: 3000px;
+}
+
+// 搜索栏
+.search {
+  height: 2rem;
+  padding: .4rem;
+  background-color: #fff;
+
+  .form {
+    position: absolute;
+    padding-right: 2.6rem;
+    width: 94.5%;
+
+    .text {
+      width: 100%;
+      height: 1.2rem;
+      background-color: #f1f1f1;
+      padding-left: .8rem;
+      padding-right: 2rem;
+      border-radius: .6rem;
+      font-size: .48rem;
+
+    }
+    .btn {
+      color: #fff;
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 2.4rem;
+      height: 1.2rem;
+      border-radius: .6rem;
+      background-color: #ff841d;
+      font-size: .48rem;       
+    }
+  }
+}
+
+// 导航
+.nav {
+  padding-top: .4rem;
+  padding-top: .2rem;
+  background-color: #fff;
+  margin-top: .4rem;
+  margin-bottom: .2rem;
+
+  .item {
+    text-align: center;
+    width: 25%;
+    margin-top: .72rem;
+    transition: all 1s;
+    overflow: hidden;
+    a {
+      display: block;
+      img {
+        width: 2rem;
+      }
+      p {
+        margin-top: .16rem;
+        font-size: .4rem;
+      }
+  }
+  &.active {
+    transform: scale(0);
+    height: 0;
+  }
+  }
+}
+
+// 分隔栏
+.line {
+  height: 1.4rem;
+  background: -webkit-gradient(linear,0 0,0 100%,from(#ffaf47),to(#ff9000));
+  padding: .34rem;
+  font-size: .56rem;
+  line-height: .56rem;
+  color: #fff;
+
+  .right {
+    img {
+      width: .72rem;
+    }
+  }
+}
+
+// 商品
+#product {
+  background-color: #fff;
+  padding-bottom: 1rem;
+  .product-list {
+    background-color: #fff;
+    text-align: left;
+    font-size: .56rem;
+    margin: 0 auto;
+    li {
+      padding: .56rem .32rem;
+      position: relative;
+      border-bottom: .04rem solid #e7e7e7;
+
+      .pic {
+        float: left;
+        width: 4.4rem;
+        img {
+          width: 4rem;
+          height: 4rem;
+        }
+      }
+      .info {
+        font-size: .56rem;
+        line-height: .96rem;
+        padding-left: 4rem;
+        .title {
+          color: #333;
+          word-break: break-all;
+          font-size: .6rem;
+          line-height: .76rem;
+          min-height: 2.28rem;
+          text-align: left;
+          font-weight: 400;
+          span {
+            color: #ff6c00;
+            display: inline;
+          }
+        }
+        .other {
+          color: #a1a1a1;
+          font-size: .48rem;
+          line-height: .96rem;
+
+          .comment {
+            color: #a1a1a1;
+            font-size: .48rem;
+            float: right;
+          }
+        }
+      }
+    }
+
+    .more-bar {
+      text-align: center;
+      width: 100%;
+      a {
+        display: block;
+        line-height: 1.2rem;
+        background: #f4f4f4;
+        text-decoration: none;
+        font-size: .52rem;
+        background-image: linear-gradient(#fff, #f4f4f4);
+        background-clip: padding;
+        margin: .4rem;
+        border: .04rem solid #ddd;
+        border-radius: .16rem;
+      }
+    }
+  }
+}

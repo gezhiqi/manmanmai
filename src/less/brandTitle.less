@@ -1,0 +1,87 @@
+// 搜索栏
+.search {
+  height: 2rem;
+  padding: .4rem;
+  background-color: #fff;
+
+  .form {
+    position: absolute;
+    padding-right: 2.6rem;
+    width: 94.5%;
+
+    .text {
+      width: 100%;
+      height: 1.2rem;
+      background-color: #f1f1f1;
+      padding-left: .8rem;
+      padding-right: 2rem;
+      border-radius: .6rem;
+      font-size: .48rem;
+
+    }
+    .btn {
+      color: #fff;
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 2.4rem;
+      height: 1.2rem;
+      border-radius: .6rem;
+      background-color: #ff841d;
+      font-size: .48rem;       
+    }
+  }
+}
+
+
+// 分类
+.product-list-title {
+  padding-left: .32rem;
+  height: 1.44rem;
+  line-height: 1.44rem;
+  border-top: 1px solid #ebebeb;
+  background-color: #ebebeb;
+  border-bottom: 1px solid #ccc;
+  background: -webkit-gradient(linear,0 0,0 100%,from(#fff),to(#ebebeb));
+  
+  a {
+    color: #000;
+    font-size: .5rem;
+  }
+}
+
+// 分类列表
+#brandTitle {
+  margin-bottom: 1rem;
+  .row {
+    border-radius: .2rem;
+    border: 1px solid #ccc;
+    background-color: #ededed;
+
+    .brandTitle-title {
+
+      li {
+        &:last-child {
+          a {
+            &:last-child {
+              border-bottom: none;
+            }
+          }
+          
+        }
+        a {
+          padding-left: .64rem;
+          display: block;
+          height: 1.6rem;
+          line-height: 1.6rem;
+          font-size: .64rem;
+          color: #000;
+          font-weight: 700;
+          background: url(http://www.zuyushop.com/wap/images/arrow1.gif) right center no-repeat;
+          border-bottom: .02rem solid #ccc;
+        }
+      }
+      
+    }
+  }
+}

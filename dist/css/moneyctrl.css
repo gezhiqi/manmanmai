@@ -1,0 +1,105 @@
+.save-header {
+  height: 1.4rem;
+  background: #ff841d;
+  position: relative;
+}
+.save-header h1 {
+  font-size: 0.7rem;
+  height: 1.4rem;
+  line-height: 1.4rem;
+  text-align: center;
+  font-weight: 700;
+  color: #fff;
+}
+.save-header .appdown {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 0.2rem;
+}
+.save-header .appdown img {
+  height: 1rem;
+}
+.product-list-title {
+  padding-left: 0.32rem;
+  height: 1.44rem;
+  line-height: 1.44rem;
+  border-top: 1px solid #ebebeb;
+  background-color: #ebebeb;
+  border-bottom: 1px solid #ccc;
+  background: -webkit-gradient(linear, 0 0, 0 100%, from(#fff), to(#ebebeb));
+}
+.product-list-title a {
+  color: #000;
+  font-size: 0.5rem;
+}
+.product-list-title .select {
+  float: right;
+  display: block;
+  height: 1.1rem;
+  line-height: 1.1rem;
+  margin-top: 0.12rem;
+  margin-right: 0.2rem;
+  padding: 0 0.64rem;
+  border-radius: 0.2rem;
+  box-shadow: 0 0.04rem 0.08rem #888;
+  background-color: #ebebeb;
+  background: -webkit-gradient(linear, 0 0, 0 100%, from(#d7d7d7), to(#f5f5f5));
+}
+.product-list-product ul li {
+  background-color: #fff;
+  height: 4.4rem;
+  padding: 0.56rem 0.32rem;
+  border-bottom: 0.02rem solid #e7e7e7;
+}
+.product-list-product ul li a {
+  display: block;
+}
+.product-list-product ul li a .pic {
+  width: 3.28rem;
+  height: 3.28rem;
+}
+.product-list-product ul li a .pic img {
+  width: 3.28rem;
+  height: 3.28rem;
+  font-size: 0.36rem;
+}
+.product-list-product ul li a .info {
+  padding-left: 3.48rem;
+}
+.product-list-product ul li a .info .tit {
+  height: 2rem;
+  font-size: 0.48rem;
+  color: #000;
+}
+.product-list-product ul li a .info .other span {
+  margin-right: 0.2rem;
+  font-size: 0.4rem;
+}
+.product-list-product ul li a .info .other span:first-child {
+  float: left;
+}
+.product-list-product ul li a .info .other span:last-child {
+  float: right;
+}
+.page {
+  display: flex;
+  height: 1.8rem;
+  line-height: 0.76rem;
+  text-align: center;
+  padding-top: 0.2rem;
+  background-color: #fff;
+}
+.page div {
+  flex: 1;
+  padding: 0 1.4rem;
+}
+.page div a {
+  display: block;
+  padding: 0.1rem 0.4rem;
+  color: #000;
+  font-size: 0.32rem;
+  border-radius: 0.2rem;
+  background: -webkit-gradient(linear, 0 0, 0 100%, from(#f1f1f1), to(#d4d4d4));
+  background-color: #d4d4d4;
+}

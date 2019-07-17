@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- @@include ./template/base.html -->
+  <link rel="stylesheet" href="./css/inlanddiscount.css">
+  <title>国内折扣</title>
+</head>
+
+<body>
+
+  <!-- 头部 -->
+  <div class="inlanddiscount-header">
+    <h1>国内折扣</h1>
+    <div class="appdown">
+      <a href="#"><img src="./img/header_app.png" alt=""></a>
+    </div>
+  </div>
+
+  <!-- 主要商品 -->
+  <div class="recommen-product">
+    <div class="inland-discount-list cu-friend">
+      <ul class="ul-box clearfix">
+        <!-- 挖个坑 -->
+      </ul>
+    </div>
+  </div>
+
+  <!-- 底部 -->
+  <!-- @@include ./template/footer.html -->
+
+  <script src="./js/inlanddiscount.js"></script>
+
+  <!-- 主商品渲染 -->
+  <script type="text/html" id="inlanddiscountTpl">
+    {{ each result v i }}
+    <li>
+      <a href="discount.html?productid={{ v.productId }}">
+        <div class="img"><img src="{{ v.productImg.src }}"
+            alt="{{ v.productImg.alt }}"></div>
+        <div class="title txt-cut">{{ v.productName }}</div>
+        <div class="subtit one-txt-cut">{{ v.productPrice }}</div>
+        <div class="info">{{ v.productFrom }}</div>
+      </a>
+    </li> 
+    {{ /each }}
+  </script>
+</body>
+
+</html>
